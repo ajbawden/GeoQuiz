@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:text="constantinople is the largest city in turkey"
+ />
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+         <Button
+
+        android:id="@+id/true_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="true"
+        android:layout_below="@+id/question_text_view"
+        android:layout_alignLeft="@+id/question_text_view"
+        android:layout_alignStart="@+id/question_text_view" />
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="False"
+            android:id="@+id/false_button"
+            android:layout_alignTop="@+id/true_button"
+            android:layout_toRightOf="@+id/true_button"
+            android:layout_toEndOf="@+id/true_button" />
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:layout_below="@+id/true_button"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/arrow_right"
+        android:drawablePadding="4dp"
+        />
+
+
+
+
+</LinearLayout>
